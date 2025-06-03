@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+<div
+        class="h-full w-full mx-auto relative top-12 pb-20 xl:px-16 px-8 flex md:flex-row flex-col gap-4 justify-center items-center pb-10 pt-4">
+        <div class="w-full relative">
+        <img class="shadow-2xl shadow-rose-600 animate-[spin_12s_linear_infinite] absolute left-0 right-0 rounded-full  mx-auto" src="static/1.png" alt="My Image" />
+        <img class="relative z-8 rounded-full lg:max-w-[40%] max-w-[30%] mx-auto " src="static/1.png" alt="My Image" />
+
+
+        </div>
+        <div class="w-full flex flex-col justify-center gap-4 md:text-left text-center text-white dark:text-gray-800 md:mt-0 sm:mt-8 mt-4">
+            <h1 class="md:text-4xl sm:text-3xl text-2xl font-semibold font-serif">Hello, My name is Harris Ahmed</h1>
+            <h3 class="capitalize text-rose-400">I Have Experience in <span class="typing text-green-500 dark:text-green-700"></span></h3>
+            <p> I am a T-Level Software Development student with experience in Python, JavaScript, HTML, and CSS. Passionate about expanding my technical skills, I am seeking a degree apprenticeship to gain hands-on experience and further develop my expertise. I am a quick learner, highly motivated, and dedicated, with strong teamwork and problem-solving abilities. My goal is to build a career in cybersecurity, with a particular interest in the automotive industry, where I can combine my passion for technology and innovation.</p>
+            <div class="sm:mt-4 mt-2">
+            <a href=https://github.com/harris25-a?tab=overview&from=2025-06-01&to=2025-06-03" target="_blank" rel="noopener noreferrer" >
+                <img href=https://github.com/harris25-a?tab=overview&from=2025-06-01&to=2025-06-03" class="github" width="50" height="25" src="static/github-mark-white.png"/>
+            </a>
+             <a href=https://www.linkedin.com/in/harris-ahmed-99443334b/" target="_blank" rel="noopener noreferrer" >
+                <img href="https://www.linkedin.com/in/harris-ahmed-99443334b/" class="in" width="50" height="25" src="static/InBug-White.png"/>
+             </a>
+             <a href="static/Harris Ahmed CV.pdf" target="_blank" rel="noopener noreferrer" class="cv">
+                Open CV
+             </a>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+<script>
+    var typed = new Typed('.typing', {
+    strings: ['', 'Python,', 'HTML,', 'CSS,', 'JavaScript.'],
+    typeSpeed: 100,
+    BackSpeed: 60,
+    loop: true
+})
+</script>
+{% endblock %}

@@ -1,0 +1,7 @@
+body {
+    background-color: #00000;
+}
+
+img{
+    src="static/1.png" style="position: relative; left: -100px; top: 20px;"
+}

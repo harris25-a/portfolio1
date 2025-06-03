@@ -1,0 +1,98 @@
+/* work.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(128, 128, 128);
+  color: #000;
+}
+
+.work-section {
+  padding: 3rem 1rem;
+  background-color: rgb(128, 128, 128);
+}
+
+.title-container {
+  text-align: left;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
+
+@media (min-width: 768px) {
+  .title-container {
+    padding-left: 2rem;
+  }
+}
+
+
+.work-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  margin-left: 1200px;
+}
+
+.work-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.projects-container {
+  display: grid;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-image {
+  width: 100%;
+  height: 14rem;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 1.25rem;
+  background-color: #fff;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.project-card:hover .project-title {
+  color: #7e22ce;
+}
+
+.project-description {
+  color: black;
+
+}

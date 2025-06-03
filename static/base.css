@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(128, 128, 128);
+}
+
+h1{
+    font-weight: bold;
+    font-family: "MS PGothic";
+    color: snow;
+}
+
+p{
+    font-weight: bold;
+    width: 60ch;
+    margin-left: 350px;
+
+}
+
+.github{
+    margin-left: 550px;
+
+
+}
+
+.in{
+    margin-left: 650px;
+    margin-top: -45px;
+}
+
+.cv{
+      margin-top: 50px;
+      background-color: #2563eb; /* Tailwind bg-blue-600 */
+      color: white;
+      padding: 0.5rem 1rem; /* py-2 px-4 */
+      border-radius: 0.5rem; /* Tailwind rounded (approx) */
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+      margin-left: 30px;
+}
+
+.cv:hover{
+  background-color: #1d4ed8;
+}

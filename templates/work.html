@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='work.css') }}">
+
+<section class="work-section">
+  <div class="title-container">
+    <h1 class="work-title">My Work</h1>
+  </div>
+
+  <div class="projects-container">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="static/rtc.png" alt="Web App Story" class="project-image">
+      <div class="project-content">
+        <h2 class="project-title">Web App Story</h2>
+          A choose-your-own-adventure web app where users make decisions that affect the story's ending. Built with Vue.js, HTML/CSS, and JavaScript, and deployed on Render.
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="static/tdolist.png" alt="To Do List App" class="project-image">
+      <div class="project-content">
+        <h2 class="project-title">To-Do List</h2>
+          A simple task management app where users can add, check off, and delete items. Developed using Python, Java, Flask, SQLAlchemy, and HTML/CSS.
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <img src="static/vending_machine.png" alt="Vending Machine Simulation" class="project-image">
+      <div class="project-content">
+        <h2 class="project-title">Vending Machine Simulation</h2>
+          A Python-based simulation of a vending machine that lets users purchase items with virtual currency, handles payments, and provides change.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}
